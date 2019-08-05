@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>صفحه اصلی</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <!-- Bootstrap 3.3.2 -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons -->
+    <link href="dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link href="dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    <link href="dist/css/myCss.css" rel="stylesheet" type="text/css" />
+    <link href="dist/css/Radio%20button%20css.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="skin-blue" id="bdy" style="background-color: rgb(236,240,245);overflow: auto">
+
+    <div class="row" style="z-index: 1000;background-color: rgba(0,0,0,0.9);position: fixed;right: 0;left: 0;top: 0">
+        <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12" style="text-align: center;padding-top: 16px;font-size: 20px">
+            <a href="#" style="color: #09afe1;">
+                <span style="color: #89d281">Digi</span>Rasan
+            </a>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6" style="text-align: center;padding-top: 16px">
+            <li class="dropdown user user-menu" style="list-style: none">
+                <a href="#" class="dropdown-toggle navbtnborder" data-toggle="dropdown" role="button" style="color: white;">
+                    <i class="fa fa-angle-down"></i>
+                    <span style="color: #89d281">2 </span>لیست سفارش  <i class="fa fa-shopping-cart"></i>
+                </a>
+                <ul class="dropdown-menu" style="border-radius: 0;width: 100%;padding-bottom: 0;">
+                    <!-- Menu Footer-->
+                    <li class="user-footer" style="overflow: hidden">
+                        <div class="row" style="padding-left: 20px;padding-right: 20px;border-bottom: 1px dashed green">
+                            <div style="float: right" class="text-right">:قیمت کل</div>
+                            <div class="text-left text-red">200,000</div>
+                        </div>
+                        <div class="row text-center" style="padding-left: 20px;padding-right: 20px;border-bottom: 1px dashed green">
+                            <div class="row">
+                                <div style="float: right">
+                                    <i class="fa fa-times-circle btn"></i>
+                                </div>
+                                <div style="padding-top: 5px">
+                                    babolnews
+                                </div>
+                            </div>
+                            <div class="row">
+                                قیمت:100,000
+                            </div>
+                        </div>
+                        <div class="row text-center" style="padding-left: 20px;padding-right: 20px">
+                            <div class="row">
+                                <div style="float: right">
+                                    <i class="fa fa-times-circle btn"></i>
+                                </div>
+                                <div style="padding-top: 5px">
+                                    aparat
+                                </div>
+                            </div>
+                            <div class="row">
+                                قیمت:100,000
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="Review.html" class="btn" style="width: 100%;background-color: #09afe1;color: black;">ادامه</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" style="text-align: right;padding-top: 16px">
+            <div id="dropdown">
+                <a id="dropbtn" class="a">
+                    <i class="fa fa-angle-down"></i>
+                    کمپین های من
+                </a>
+                <div id="dropdown-content" style="right: 0;text-align: right">
+                    <a href="#" class="a">کمپین های درحال انجام</a>
+                    <a href="#" class="a">کمپین های تمام شده</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" style="text-align: center;padding-top: 16px">
+            <a href="" class="a">ایجاد کمپین جدید</a>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6" style="text-align: center">
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <!-- User Account: style can be found in dropdown.less -->
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="float: right;">
+                            <span class="a">
+                                <i class="fa fa-angle-down"></i>
+                                پارسا لاریمیان
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- Menu Footer-->
+                            <li class="user-footer">
+                                <div class="text-right">
+                                    <a href="./dashboard.html" class="text-black"> پروفایل <i class="fa fa-user"></i></a>
+                                </div>
+                                <div class="text-right">
+                                    <a href="#" class="text-black">
+                                        خروج
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 5%;">
+        <div class="col-lg-10 col-md-10 col-sm-12" style="background-color: rgb(236,240,245)">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="well" id="sort" style="background-color: rgba(0,0,0,0);border: solid 1px silver;padding:5px 5px 5px 0px;text-align: right">
+                        <p style="float: right;margin-top: 8px;margin-left: 10px; ">:مرتب سازی بر اساس</p>
+                        <a class="btn" style="font-family: 'Yekan';color: black;margin-left: 10px;">ارزان ترین</a>
+                        <a class="btn" style="color: black;margin-left: 10px;">گران ترین</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" style="padding-left: 30;margin-bottom: 100px">
+                    <table style="text-overflow:ellipsis;white-space: nowrap"
+                           class="my-table my-table-horizontal my-table-highlight">
+                        <thead>
+                            <tr>
+                                <th>افزودن به لیست</th>
+                                <th>تعداد تعرفه</th>
+                                <th>امتیاز</th>
+                                <th>قیمت</th>
+                                <th>میزان مشارکت</th>
+                                <th>تعداد فالور</th>
+                                <th>دسته بندی</th>
+                                <th>نام</th>
+                                <th>آیدی کانال</th>
+                                <th>ردیف</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="font-size: 20px;"><i data-toggle="modal" data-target="#myModal" class="btn fa fa-cart-plus"></i></td>
+                                <td>2</td>
+                                <td>4</td>
+                                <td>100</td>
+                                <td>100%</td>
+                                <td>100k</td>
+                                <td>اخبار</td>
+                                <td>بابل نیوز</td>
+                                <td>Aparat</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;"><i class="btn fa fa-cart-plus"></i></td>
+                                <td>2</td>
+                                <td>4</td>
+                                <td>100</td>
+                                <td>100%</td>
+                                <td>100k</td>
+                                <td>سرگرمی</td>
+                                <td>آپارات</td>
+                                <td>Aparat</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;"><i class="btn fa fa-cart-plus"></i></td>
+                                <td>2</td>
+                                <td>4</td>
+                                <td>100</td>
+                                <td>100%</td>
+                                <td>100k</td>
+                                <td>ورزشی</td>
+                                <td>برنامه نود</td>
+                                <td>Football</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;"><i class="btn fa fa-cart-plus"></i></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>100%</td>
+                                <td>100k</td>
+                                <td>محلات</td>
+                                <td>بابل شهره بهار نارنج</td>
+                                <td>Babol baharnarenj</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;"><i class="btn fa fa-cart-plus"></i></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>100%</td>
+                                <td>100k</td>
+                                <td>اخبار</td>
+                                <td>خبر فوری</td>
+                                <td>Khabar fori</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;"><i class="btn fa fa-cart-plus"></i></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>100%</td>
+                                <td>100k</td>
+                                <td>اخبار</td>
+                                <td>خبر فوری</td>
+                                <td>Khabar fori</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;"><i class="btn fa fa-cart-plus"></i></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>100%</td>
+                                <td>100k</td>
+                                <td>اخبار</td>
+                                <td>خبر فوری</td>
+                                <td>Khabar fori</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;"><i class="btn fa fa-cart-plus"></i></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>100%</td>
+                                <td>100k</td>
+                                <td>اخبار</td>
+                                <td>خبر فوری</td>
+                                <td>Khabar fori</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;"><i class="btn fa fa-cart-plus"></i></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>100%</td>
+                                <td>100k</td>
+                                <td>اخبار</td>
+                                <td>خبر فوری</td>
+                                <td>Khabar fori</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;"><i class="btn fa fa-cart-plus"></i></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>100%</td>
+                                <td>100k</td>
+                                <td>اخبار</td>
+                                <td>خبر فوری</td>
+                                <td>Khabar fori</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;"><i class="btn fa fa-cart-plus"></i></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>100%</td>
+                                <td>100k</td>
+                                <td>اخبار</td>
+                                <td>خبر فوری</td>
+                                <td>Khabar fori</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;"><i class="btn fa fa-cart-plus"></i></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>100%</td>
+                                <td>100k</td>
+                                <td>اخبار</td>
+                                <td>خبر فوری</td>
+                                <td>Khabar fori</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;"><i class="btn fa fa-cart-plus"></i></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>100%</td>
+                                <td>100k</td>
+                                <td>اخبار</td>
+                                <td>خبر فوری</td>
+                                <td>Khabar fori</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;"><i class="btn fa fa-cart-plus"></i></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>100%</td>
+                                <td>100k</td>
+                                <td>اخبار</td>
+                                <td>خبر فوری</td>
+                                <td>Khabar fori</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;"><i class="btn fa fa-cart-plus"></i></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>100%</td>
+                                <td>100k</td>
+                                <td>اخبار</td>
+                                <td>خبر فوری</td>
+                                <td>Khabar fori</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;"><i class="btn fa fa-cart-plus"></i></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>100%</td>
+                                <td>100k</td>
+                                <td>اخبار</td>
+                                <td>خبر فوری</td>
+                                <td>Khabar fori</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 20px;"><i class="btn fa fa-cart-plus"></i></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>100%</td>
+                                <td>100k</td>
+                                <td>اخبار</td>
+                                <td>خبر </td>
+                                <td>Khabar fori</td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2" style="position: fixed;right: 0;background-color: rgb(236,240,245)">
+            <div class="row" style="margin: 8px;max-height: 200px">
+                <div class="col-lg-12" style="text-align: right;border: solid 1px silver;padding: 8px;overflow-x: hidden;background: rgba(225,225,225,0);max-height: 200px">
+                    <div class="row">
+                        <input type="checkbox" id="1" />
+                        <label for="1">ورزشی</label>
+                    </div>
+                    <div class="row">
+                        <input type="checkbox" id="2" />
+                        <label for="2">اخبار</label>
+                    </div>
+                    <div class="row">
+                        <input type="checkbox" id="3" />
+                        <label for="3">هنر</label>
+                    </div>
+                    <div class="row">
+                        <input type="checkbox" id="4" />
+                        <label for="4">هنر</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin: 8px">
+                <div class="col-lg-12" style="border: solid 1px silver;padding: 8px;
+                                              overflow-x: hidden;background: rgba(225,225,225,0);max-height: 200px">
+                    <label class="container2" style="text-align: right;font-size: 14px">
+                        مازندران
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container2" style="text-align: right;font-size: 14px">
+                        تهران
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container2" style="text-align: right;font-size: 14px">
+                        مشهد
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label><label class="container2" style="text-align: right;font-size: 14px">
+                        مشهد
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label><label class="container2" style="text-align: right;font-size: 14px">
+                        مشهد
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label><label class="container2" style="text-align: right;font-size: 14px">
+                        مشهد
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="row" style="margin: 8px">
+                <div class="col-lg-12" style="border: solid 1px silver;padding: 8px;overflow: auto;background: rgba(225,225,225,0);max-height: 200px">
+                    <div data-role="main" class="ui-content">
+                        <div data-role="rangeslider">
+                            <label for="price-min" style="text-align: right;">:قیمت</label>
+                            <input type="range" name="price-min" id="price-min" value="0" min="0" max="1000"
+                                   style="position: absolute;bottom: 25%;left: 15%;width: 60px">
+                            <label for="price-max">:قیمت</label>
+                            <input type="range" name="price-max" id="price-max" value="100000" min="0" max="500000" style="position: absolute;bottom: 2%;left: 15%;width: 60px">
+                        </div>
+                        <p style="position: absolute;right: 20%;bottom: 25%">از</p>
+                        <p style="position: absolute;right: 20%;bottom: 2%">تا</p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin: 8px">
+                <a class="btn" style="background-color: springgreen;color: black;">فیلتر کن</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">تعرفه های پیج بابل نبوز</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <dd>
+                        <dl>
+                            <div class="radio radio-info">
+                                <input name="package" id="radio15" value="1703" type="radio">
+                                <label for="radio15">هزینه تبلیغات از ساعت 7 تا 18 , 50 تومان</label>
+                            </div>
+                            <div class="radio radio-info">
+                                <input name="package" id="radio15" value="1703" type="radio">
+                                <label for="radio15">هزینه تبلیغات از ساعت 18 تا 23 شب 50 تومان</label>
+                            </div>
+                        </dl>
+                    </dd>
+                </div>
+                <div class="text-center" style="padding: 15px">
+                    <button type="button" class="btn btn-success waves-effect waves-light" data-dismiss="modal">افزودن به سبد</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
+                </div>
+            </div>
+
+        </div>
+    </div><!-- Modal -->
+
+
+    <footer id="footer" class="main-footer navbar-fixed-bottom">
+        <strong>Copyright &copy;گروه دی جی رسان.</strong> All rights reserved
+        <div style="float: right"><a style="color: white;padding-right:20px;" href="#">درباره ما</a></div>
+    </footer>
+
+    <script src="plugins/jQuery/jQuery-2.1.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>

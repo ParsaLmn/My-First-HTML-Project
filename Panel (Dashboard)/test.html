@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="dist/css/myCss.css" rel="stylesheet" type="text/css" /><link href="dist/css/Radio%20button%20css.css" rel="stylesheet" type="text/css" />
+    <link href="dist/css/TextBoxCss.css" rel="stylesheet" type="text/css" /><link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body >
+
+<table class="my-table my-table-horizontal my-table-highlight" style="text-overflow:ellipsis;white-space: nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>بیشتر</th>
+                                        <th>وضعیت تبلیغ</th>
+                                        <th>ساعت مانده</th>
+                                        <th>ساعت پایان</th>
+                                        <th>ساعت شروع</th>
+                                        <th>تعداد کامنت</th>
+                                        <th>تعداد لایک</th>
+                                        <th>نام پیج</th>
+                                        <th>ردیف</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a class="btn" title="مشاهده تبلیغ" target="_blank" href="https://www.instagram.com/babolnews/">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                            <a class="btn" title="مشاهده کامنت ها"><i class="fa fa-comment"></i></a>    
+                                        </td>
+                                        <td>
+                                            <i class="fa fa-check text-yellow"></i>
+                                            در حال انجام
+                                        </td>
+                                        <td>4</td>
+                                        <td>-</td>
+                                        <td>12</td>
+                                        <td>
+                                            50
+                                        </td>
+                                        <td>1000</td>
+                                        <td>aparat</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="btn" title="مشاهده تبلیغ" target="_blank"><i class="fa fa-instagram"></i></a>
+                                            <a class="btn" title="مشاهده کامنت ها"><i class="fa fa-comment"></i></a>    
+                                        </td>
+                                        <td>
+                                            <i class="fa fa-check text-green"></i>
+                                            تمام شده
+                                        </td>
+                                        <td>0</td>
+                                        <td>8</td>
+                                        <td>24</td>
+                                        <td>
+                                            88
+                                        </td>
+                                        <td>1500</td>
+                                        <td>news</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>-</td>
+                                        <td>
+                                            <i class="fa fa-times text-red"></i>
+                                            شروع نشد
+                                        </td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>babol news</td>
+                                        <td>3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+<div class="wrap-input100 validate-input" data-validate="نام خود را وارد نمایید!!">
+						<input class="input100" type="text" name="name" placeholder="نام خود را وارد نمایید">
+						<span class="focus-input100"></span>
+					</div>
+    //////////////////
+    
+    
+    
+    <div class="row" style="text-align: center">
+        
+    <input type="checkbox" id="1" />
+    <label for="1">ورزشی</label>
+        <input type="checkbox" id="2" />
+    <label for="2">اخبار</label>
+        <input type="checkbox" id="3" />
+    <label for="3">هنر</label>
+    </div>
+    
+    //////
+    
+    
+    <div id="buttoms" style="text-align: center">
+        <a class="btn" href="1" style="background-color: red">1</a>
+        <a class="btn" href="2" style="background-color: red">2</a>
+        <a class="btn" href="3" style="background-color: red">3</a>
+    </div>
+    <div id="para" style="text-align: center">
+        <p>
+            salam
+        </p>
+    </div>
+    <div id="done" style="text-align: center">
+        <a  class="btn" style="background-color: brown">done</a>
+        <input id="name" type="text" style="border: 1px solid red">
+        <p id="result"></p>
+    </div>
+    
+    /////////////////
+    
+</body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(e){
+            var $s=$('#buttoms');
+            $('#buttoms').find('a').on('click',function(e){
+                e.preventDefault();
+                var $para = $('#para')
+                switch($(this).attr('href')){
+                    case '1':
+                        $para.load('dashboard.html');
+                        break;
+                    case '2':
+                        $para.load('Review.html');
+                        break;
+                    case '3':
+                        $para.load('test.html');
+                        break;
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(e){
+            $('#done').find('a').on('click',function(e){
+                e.preventDefault();
+                var $result=$('#result'),
+                    name=$('#name').val();
+                $result.html('esme shoma '+name+' ast. :)');
+            });
+        });
+    </script>
+</html>
